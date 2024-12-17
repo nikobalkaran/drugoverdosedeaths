@@ -1,0 +1,137 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+/*Would like Playfair Display font from Google Fonts to be the default for everything on the page. */
+* {
+    box-sizing: border-box;
+    font-family: "Playfair Display",
+    Serif;
+
+/*Ended up with 1.7 for line height because 1.6 and below seems to clustered and made the text hard to read, 
+while 2 and up was too far apart.*/
+    line-height: 1.7;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+
+}
+
+/*As with Project 2, I did not change much here in the CSS. I mostly added the h3 section for the subheading and changed how the links look.*/
+.header {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 1px solid;
+    
+
+}
+
+body {
+    background-color: white;
+}
+
+
+
+figure{
+    max-width: 900px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin: 20px;
+    max-width: 750px;
+}
+
+
+/*I customized the table to fit more with the text.*/
+.table {
+    margin: 20px;
+    max-width: 750px;
+    margin-bottom: 10px;
+}
+
+
+/* Not needed.
+ol{
+    margin-top: -8px;
+}
+*/
+
+h1, h3, h5, h6{
+    text-align: center;
+}
+
+
+h1, h2{
+    color: black;
+}
+
+h3{
+    font-style: italic;
+    font-family: serif;
+    margin-bottom: -10px;
+
+}
+
+/*Can adjust margin of byline alone by creating a class.*/
+
+h5, h6{
+    margin-bottom: -10px;
+}
+
+/* Decided to change the link to be royal blue for this project. */
+a{
+    color:royalblue;
+}
+
+/* Wanted the links to change color when hovered over */
+a:hover {
+    color: red;
+}
+
+
+h2{
+    margin-bottom: -10px;
+}
+
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+body{
+    background-color: white;
+}
+
+.container{
+    margin:auto;
+    margin-bottom: auto;
+}
+
+/*Wanted the paragraphs to be closer to the headers like Immigration */
+
+h2, p {
+    margin: 5px;
+}
+
+}
+
+
+/*All of my desktop rules need to be above this bracket*/
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
